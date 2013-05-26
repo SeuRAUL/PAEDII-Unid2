@@ -1,0 +1,9 @@
+Criando um pacote em java
+
+	1. Inseri o nome do pacote no inicio do <arquivo>.java
+		package <nome_pacote>
+	2. Executa dentro da pagina dos .java o seguinte comando
+		javac -d . <arquivo1>.java <arquivo2>.java ...
+	3. Recorte e cole o diretório criado para onde estou querendo usa-lo e utilize o seguinte comando
+		import nome_pacote.*
+	4. Podera desta forma utilizar todas as classes do pacote
