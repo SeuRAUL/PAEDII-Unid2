@@ -101,11 +101,22 @@ public class ListaAdjacencia{
     //--------------------------------------------------------------------
     //                       Atributo Privado
     //--------------------------------------------------------------------
-    private Lista L[]; ///< Lista de Adjacencia representacao
+    public Lista L[]; ///< Lista de Adjacencia representacao
 
     //--------------------------------------------------------------------
     //                       Metodos Publicos
     //--------------------------------------------------------------------
+    /**
+     * \fn public int verificarTamLista()
+     *
+     * \brief Identifica o tamanho da lista de adjacencia.
+     *
+     * \return O valor do tamanho da lista de adjacencia.
+     */
+    public int verificarTamLista(){
+	return L.length;
+    }
+
     /**
      * \fn public void iniciaListaDeAdjacencia(int tam)
      *
