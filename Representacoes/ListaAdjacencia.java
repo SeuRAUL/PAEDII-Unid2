@@ -84,6 +84,17 @@ public class ListaAdjacencia{
 	    Node no = new Node(chave, custo);
 	    list.addFirst(no);
 	}
+
+	/**
+	 * \fn public int getTam()
+	 *
+	 * \brief retorna o tamanho da lista
+	 *
+	 * \return O tamanho da lista.
+	 */
+	public int getTam(){
+	    return list.size();
+	}
 	
 	/**
 	 * \fn public void imprimirLista()
@@ -95,6 +106,11 @@ public class ListaAdjacencia{
 		System.out.printf("%d,%d ",(list.get(i)).getInfo(),
 				 (list.get(i)).getCust());
 	    }
+	}
+
+	public boolean isEmpty(){
+	    if (list.size() == 0) return true;
+	    else return false;
 	}
     }
 
@@ -170,5 +186,12 @@ public class ListaAdjacencia{
 	    System.out.println();
 	}
     }
-    
+
+    public int valorInfo(int indiceLista, int indiceInfo){
+        return ((L[indiceLista].get(indiceInfo)).getInfo());
+    }
+
+    public int valorCusto(int indiceLista, int indiceCust){
+	return ((L[indiceLista].get(indiceCust)).getInfo());
+    }
 }
