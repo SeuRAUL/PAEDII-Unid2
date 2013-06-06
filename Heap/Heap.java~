@@ -26,7 +26,7 @@ public class Heap {
     	System.out.printf("\nConteúdo do arquivo texto:\n");
         try {
         	
-          FileReader arq = new FileReader("filaprioridade1.in");
+          FileReader arq = new FileReader("../filaprioridade1.in");
           BufferedReader lerArq = new BufferedReader(arq);
           
           String linha = lerArq.readLine(); // lê a primeira linha
