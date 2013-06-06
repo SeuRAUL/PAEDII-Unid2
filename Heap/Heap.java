@@ -9,7 +9,9 @@
  * \version 1.0
  */
 
+import java.util.Scanner;
 import java.util.Vector; // Vector para a heap
+import java.io.*; // leitura de arquivo
 
 /**
  * \class Heap
@@ -19,7 +21,34 @@ import java.util.Vector; // Vector para a heap
 public class Heap {
     
     public static void main(String[] args){
-        min_max = 1;
+    	//Scanner ler = new Scanner(System.in);
+    	
+    	System.out.printf("\nConteúdo do arquivo texto:\n");
+        try {
+        	
+          FileReader arq = new FileReader("../filaprioridade1.in");
+          BufferedReader lerArq = new BufferedReader(arq);
+          
+          String linha = lerArq.readLine(); // lê a primeira linha
+          
+          if(linha.contains("MAX")){
+        	  min_max = 1;
+          } else if (linha.contains("MIN")) {
+        	  min_max = -1;
+          }
+          
+          while (linha != null) { // a variável "linha" recebe o valor "null" quando o processo de repetição atingir o final do arquivo texto
+        	  System.out.printf("%s\n", linha);
+    
+        	  linha = lerArq.readLine(); // lê da segunda até a última linha
+          }   
+          
+        } catch (IOException e) {
+            System.err.printf("Erro na abertura do arquivo: %s.\n",
+            e.getMessage());
+        }
+        
+        //min_max = 1;
         
         Heap heap = new Heap();
         
@@ -29,6 +58,7 @@ public class Heap {
         heap.insert(5, 8);
         heap.insert(8, 2);
         heap.insert(7, 9);
+        heap.insert(9, 7);
         heap.extract();
         heap.increase(8, 6);
         heap.extract();
@@ -113,8 +143,7 @@ public class Heap {
         int pai = posicao/2;
         if (pai > 0){ // Pai existe
             if (min_max == 1){ // maxHeapify
-                No posicao_ = heap.get(posicao);
-                if (heap.get(pai).getChave() < posicao_.getChave()){
+                if (heap.get(pai).getChave() < heap.get(posicao).getChave()){
                     trocarNo(posicao, pai);
                     
                     heapify(pai);
