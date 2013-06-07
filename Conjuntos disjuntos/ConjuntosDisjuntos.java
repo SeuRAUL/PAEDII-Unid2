@@ -171,7 +171,7 @@ public class ConjuntosDisjuntos{
 	if (!compare(i, j)){ //Se os representantes sao distintos
 	    if (ordem[i] == ordem[j]){ //Ordens iguais
 	        atualizaRepresentanteVertice(i, j);
-		//Heuristica de União por Ordenacao
+		//Heuristica de Uniao por Ordenacao
 		//A ordem so e alterada quando as ordens sao iguais
 		ordem[i]++;
 		ordem[j]++;
