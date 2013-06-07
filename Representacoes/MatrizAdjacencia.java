@@ -19,7 +19,7 @@ public class MatrizAdjacencia{
     //--------------------------------------------------------------------
     //                       Atributo Privado
     //--------------------------------------------------------------------
-    public int M[][]; ///< Matriz da representação
+    public int M[][]; ///< Matriz da representacao
     
     //--------------------------------------------------------------------
     //                       Metodos Publicos

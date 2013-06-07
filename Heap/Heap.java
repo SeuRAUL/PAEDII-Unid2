@@ -35,11 +35,11 @@ public class Heap {
         try {
         	
         	// Entrada
-        	arqIn = new FileReader("fp1.in");
+        	arqIn = new FileReader("testes/filaprioridade1.in");
         	lerArq = new BufferedReader(arqIn);
         	
         	// Saída
-        	arqOut = new FileWriter("saida.txt");
+        	arqOut = new FileWriter("testes/saida.txt");
             gravarArq = new PrintWriter(arqOut);
             
   
@@ -236,7 +236,7 @@ public class Heap {
         	filhoD = filhoE + 1;
         }
         
-        if ( (filhoE > 0) && (filhoD > 0) ){
+        if ( /*(filhoE > 0) &&*/ (filhoD > 0) ){
             if (min_max == 1){ // maxHeapify
                 if (heap.get(filhoE).getChave() > heap.get(filhoD).getChave()){
                     if (heap.get(posicao).getChave() < heap.get(filhoE).getChave()){
@@ -245,7 +245,7 @@ public class Heap {
                     }
                 }
                 else{
-                    if (heap.get(posicao).getChave() < heap.get(filhoE).getChave()){
+                    if (heap.get(posicao).getChave() < heap.get(filhoD).getChave()){
                         trocarNo(posicao, filhoD);
                         descer(filhoD);
                     }
@@ -259,7 +259,7 @@ public class Heap {
                     }
                 }
                 else{
-                    if (heap.get(posicao).getChave() > heap.get(filhoE).getChave()){
+                    if (heap.get(posicao).getChave() > heap.get(filhoD).getChave()){
                         trocarNo(posicao, filhoD);
                         descer(filhoD);
                     }
