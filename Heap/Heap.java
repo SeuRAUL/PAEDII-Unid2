@@ -9,7 +9,6 @@
  * \version 1.0
  */
 
-import java.util.Scanner;
 import java.util.Vector; // Vector para a heap
 import java.io.*; // leitura de arquivo
 
@@ -19,29 +18,73 @@ import java.io.*; // leitura de arquivo
  * \brief A classe da lista de prioridade.
  */
 public class Heap {
+	
+	// Entrada
+	static FileReader arqIn;
+	static BufferedReader lerArq;
+	
+	// Saída
+	static FileWriter arqOut;
+	static PrintWriter gravarArq;
     
     public static void main(String[] args){
-    	//Scanner ler = new Scanner(System.in);
+    	Heap heap = new Heap();
+        
+        heap.heap.add(null); // 1ª posição nula
+        
+        /*heap.insert(3, 5);
+        heap.insert(5, 8);
+        heap.insert(8, 2);
+        heap.insert(7, 9);
+        heap.insert(9, 7);
+        heap.extract();
+        heap.increase(8, 6);
+        heap.extract();
+        heap.extract();*/
     	
-    	System.out.printf("\nConteúdo do arquivo texto:\n");
+    	//System.out.println("\nConteúdo do arquivo texto:\n");
         try {
         	
-          FileReader arq = new FileReader("filaprioridade1.in");
-          BufferedReader lerArq = new BufferedReader(arq);
+        	// Entrada
+        	arqIn = new FileReader("filaprioridade1.in");
+        	lerArq = new BufferedReader(arqIn);
+        	
+        	// Saída
+        	arqOut = new FileWriter("saida.txt");
+            gravarArq = new PrintWriter(arqOut);
+            
+  
+        	String linha = lerArq.readLine(); // lê a primeira linha
+			  
+        	if(linha.contains("MAX")){
+        		min_max = 1;
+        		gravarArq.println("-");
+        	} else if (linha.contains("MIN")) {
+        		min_max = -1;
+        		gravarArq.println("-");
+        	}
           
-          String linha = lerArq.readLine(); // lê a primeira linha
+        	while (linha != null) { // a variável "linha" recebe o valor "null" quando o processo de repetição atingir o final do arquivo texto
+	        	  //System.out.println("%s\n", linha);
+	    
+	        	  linha = lerArq.readLine(); // lê da segunda até a última linha
+	        	  String params[] = linha.split(" ");
+	        	  
+	        	  if (params[0].contains("insert")){
+	        		  heap.insert(Integer.parseInt(params[1]) , Integer.parseInt(params[2]));
+	        	  }
+	        	  else if (params[0].contains("decrease")){
+	        		  heap.decrease(Integer.parseInt(params[1]) , Integer.parseInt(params[2]));
+	        	  }
+	        	  else if (params[0].contains("increase")){
+	        		  heap.increase(Integer.parseInt(params[1]) , Integer.parseInt(params[2]));
+	        	  }
+	        	  else if (params[0].contains("extract")) {
+	        		  heap.extract();
+	        	  }
+        	}
           
-          if(linha.contains("MAX")){
-        	  min_max = 1;
-          } else if (linha.contains("MIN")) {
-        	  min_max = -1;
-          }
-          
-          while (linha != null) { // a variável "linha" recebe o valor "null" quando o processo de repetição atingir o final do arquivo texto
-        	  System.out.printf("%s\n", linha);
-    
-        	  linha = lerArq.readLine(); // lê da segunda até a última linha
-          }   
+        	lerArq.close();
           
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
@@ -50,19 +93,7 @@ public class Heap {
         
         //min_max = 1;
         
-        Heap heap = new Heap();
         
-        heap.heap.add(null); // 1ª posição nula
-        
-        heap.insert(3, 5);
-        heap.insert(5, 8);
-        heap.insert(8, 2);
-        heap.insert(7, 9);
-        heap.insert(9, 7);
-        heap.extract();
-        heap.increase(8, 6);
-        heap.extract();
-        heap.extract();
     }
     
     //--------------------------------------------------------------------
@@ -124,11 +155,15 @@ public class Heap {
      */
     public void insert(int id, int chave){
 
+        if (verificarId(id) > 0){
+            gravarArq.println("notinserted");
+            return;
+        }
         No no = new No(id, chave);
         heap.add(no);
         int ultimaPosicao = heap.size() - 1;
         heapify(ultimaPosicao);
-        System.out.println("Add "+ id + " " + chave);
+        gravarArq.println("-");
     }
     
     /**
@@ -165,17 +200,22 @@ public class Heap {
      * \brief Metodo que extrai a prioridade.
      */
     public void extract(){
-
-        
-        System.out.println("Extraiu: " + heap.get(1).chave);
+    	
         int ultimaPosicao = heap.size() - 1;
+        
+        if (ultimaPosicao < 1){
+        	gravarArq.println("empty");
+        	return;
+        }
+        gravarArq.println(heap.get(1).id + " " + heap.get(1).chave);
        
-        No aux = heap.get(ultimaPosicao);
-        
-        heap.remove(ultimaPosicao);
-        heap.set(1, aux);
-        
-        descer(1);
+            No aux = heap.get(ultimaPosicao);
+            heap.remove(ultimaPosicao);
+        if (heap.size() > 2){
+            heap.set(1, aux);
+            
+            descer(1);
+        }
         
     }
     
@@ -265,7 +305,7 @@ public class Heap {
     public void decrease(int id, int chave){
 
         if(min_max != -1){ // para decrease() a heap tem que ser mínima 
-            System.out.println("notupdated");
+        	gravarArq.println("notupdated");
             return;
         }
 
@@ -276,10 +316,11 @@ public class Heap {
                 No no = new No(id, chave);
 
                 heap.set(posicao, no);
+                gravarArq.println(id + "  " + chave);
                 heapify(posicao);
             }
             else{
-                System.out.println("notupdated");
+            	gravarArq.println("notupdated");
             }
         }
     }
@@ -295,7 +336,7 @@ public class Heap {
     public void increase(int id, int chave){
 
         if(min_max != 1){ // para increase() a heap tem que ser máxima 
-            System.out.println("notupdated");
+        	gravarArq.println("notupdated");
             return;
         }
 
@@ -307,11 +348,11 @@ public class Heap {
 
                 heap.set(posicao, no);
                 
-                System.out.println("Increased " + id + " para: " + chave);
+                gravarArq.println(id + "  " + chave);
                 heapify(posicao);
             }
             else{
-                System.out.println("notupdated");
+            	gravarArq.println("notupdated");
             }
         }
     }
