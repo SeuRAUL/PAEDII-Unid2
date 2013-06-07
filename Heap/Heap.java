@@ -32,21 +32,10 @@ public class Heap {
         
         heap.heap.add(null); // 1ª posição nula
         
-        /*heap.insert(3, 5);
-        heap.insert(5, 8);
-        heap.insert(8, 2);
-        heap.insert(7, 9);
-        heap.insert(9, 7);
-        heap.extract();
-        heap.increase(8, 6);
-        heap.extract();
-        heap.extract();*/
-    	
-    	//System.out.println("\nConteúdo do arquivo texto:\n");
         try {
         	
         	// Entrada
-        	arqIn = new FileReader("filaprioridade1.in");
+        	arqIn = new FileReader("fp1.in");
         	lerArq = new BufferedReader(arqIn);
         	
         	// Saída
@@ -65,7 +54,6 @@ public class Heap {
         	}
           
         	while (linha != null) { // a variável "linha" recebe o valor "null" quando o processo de repetição atingir o final do arquivo texto
-	        	  //System.out.println("%s\n", linha);
 	    
 	        	  linha = lerArq.readLine(); // lê da segunda até a última linha
 	        	  String params[] = linha.split(" ");
@@ -85,10 +73,10 @@ public class Heap {
         	}
           
         	lerArq.close();
+            gravarArq.close();
           
         } catch (IOException e) {
-            System.err.printf("Erro na abertura do arquivo: %s.\n",
-            e.getMessage());
+            System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
         }
         
         //min_max = 1;
@@ -161,6 +149,7 @@ public class Heap {
         }
         No no = new No(id, chave);
         heap.add(no);
+        System.out.println("add: " + id + " " + chave);
         int ultimaPosicao = heap.size() - 1;
         heapify(ultimaPosicao);
         gravarArq.println("-");
@@ -185,14 +174,17 @@ public class Heap {
                 }
             }
             else if(min_max == -1){ // minHeapify
-                if (heap.get(pai).getChave() > heap.get(posicao).getChave()){
+                if (heap.get(pai).getChave() > heap.get(posicao).getChave()) {
                     trocarNo(posicao, pai);
                     
                     heapify(pai);
                 }
             }
         }
-    } 
+        for (int i=1; i < heap.size() ; i++ ) {
+            System.out.printf(heap.get(i).chave + " ");
+        }System.out.println();
+    }
 
     /**
      * \fn public void extract()
@@ -207,11 +199,19 @@ public class Heap {
         	gravarArq.println("empty");
         	return;
         }
+        System.out.println("rm: " + heap.get(1).id + " " + heap.get(1).chave);
+
         gravarArq.println(heap.get(1).id + " " + heap.get(1).chave);
        
-            No aux = heap.get(ultimaPosicao);
-            heap.remove(ultimaPosicao);
-        if (heap.size() > 2){
+        No aux = heap.get(ultimaPosicao);
+        trocarNo(1, ultimaPosicao);
+        heap.remove(ultimaPosicao);
+
+        for (int i=1; i < heap.size() ; i++ ) {
+            System.out.printf(heap.get(i).chave + " ");
+        }
+        System.out.println();
+        if (heap.size() >= 2){
             heap.set(1, aux);
             
             descer(1);
@@ -228,39 +228,56 @@ public class Heap {
      */
     private void descer(int posicao){
         int filhoE = -1;
-        if ((posicao * 2) < heap.size()) {
+        if ((posicao * 2) < heap.size()-1) {
         	filhoE = posicao * 2;
         }
         int filhoD = -1;
-        if ((posicao * 2)+1 < heap.size()) {
-        	filhoD = (posicao * 2) + 1;
+        if ( (filhoE + 1) < heap.size()) {
+        	filhoD = filhoE + 1;
         }
         
         if ( (filhoE > 0) && (filhoD > 0) ){
             if (min_max == 1){ // maxHeapify
                 if (heap.get(filhoE).getChave() > heap.get(filhoD).getChave()){
-                    trocarNo(posicao, filhoE);
-                    descer(filhoE);
+                    if (heap.get(posicao).getChave() < heap.get(filhoE).getChave()){
+                        trocarNo(posicao, filhoE);
+                        descer(filhoE);
+                    }
                 }
                 else{
-                    trocarNo(posicao, filhoD);
-                    descer(filhoD);
+                    if (heap.get(posicao).getChave() < heap.get(filhoE).getChave()){
+                        trocarNo(posicao, filhoD);
+                        descer(filhoD);
+                    }
                 }
             }
             else if (min_max == -1){ // minHeapify
                 if (heap.get(filhoE).getChave() < heap.get(filhoD).getChave()){
-                    trocarNo(posicao, filhoE);
-                    descer(filhoE);
+                    if (heap.get(posicao).getChave() > heap.get(filhoE).getChave()){
+                        trocarNo(posicao, filhoE);
+                        descer(filhoE);
+                    }
                 }
                 else{
-                    trocarNo(posicao, filhoD);
-                    descer(filhoD);
+                    if (heap.get(posicao).getChave() > heap.get(filhoE).getChave()){
+                        trocarNo(posicao, filhoD);
+                        descer(filhoD);
+                    }
                 }
             }
         }
         else if (filhoE > 0){
-        	trocarNo(posicao, filhoE);
-            descer(filhoE);
+            if(min_max == 1){ // MAX
+            	if (heap.get(posicao).getChave() < heap.get(filhoE).getChave()){
+                    trocarNo(posicao, filhoE);
+                    descer(filhoE);
+                }
+            }else { // MIN
+                if (heap.get(posicao).getChave() > heap.get(filhoE).getChave()){
+                    trocarNo(posicao, filhoE);
+                    descer(filhoE);
+                }
+            }
         }
     }
     
