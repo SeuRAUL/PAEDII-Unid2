@@ -1,8 +1,57 @@
 import representacoes.*; //MatrizAdjacencia.java e ListaAdjacencia.java
 import conjuntosDisjuntos.*; //ConjuntosDisjuntos.java
 public class TesteKruskal{
+
+	ListaAdjacencia obj = new ListaAdjacencia();
+
+	// Entrada
+	static FileReader arqIn;
+	static BufferedReader lerArq;
+	
+	// Saída
+	static FileWriter arqOut;
+	static PrintWriter gravarArq;
+
     public static void main(String[] args){
-			ListaAdjacencia obj = new ListaAdjacencia();
+
+    	try{
+
+    		// Entrada
+	    	arqIn = new FileReader("agm2.in");
+	    	lerArq = new BufferedReader(arqIn);
+	    	
+	    	// Saída
+	    	arqOut = new FileWriter("saida.txt");
+	    	gravarArq = new PrintWriter(arqOut);
+    		
+				String linha = lerArq.readLine();
+
+				obj.iniciaListaDeAdjacencia(Integer.parseInt(linha));
+				ConjuntosDisjuntos obj1 = new ConjuntosDisjuntos(obj);
+
+				while (linha != null) {
+					linha = lerArq.readLine(); // lê da segunda até a última linha
+      	  String params[] = linha.split(" ");
+
+      	  if (params[o].contains("edge")) {
+      	  	obj.iniciaArestasDaListaComPeso(Integer.parseInt(params[1]), Integer.parseInt(params[2]), Integer.parseInt(params[3]));
+      	  	gravarArq.println("-");
+      	  }
+      	  else if (params[0].contains("kruskal")) {
+      	  	Kruskal obj2 = new Kruskal();
+						obj2.kruskal(obj, obj1);
+      	  }
+      	  else if (params[0].contains("prim")) {
+      	  	Prim obj2 = new Prim();
+						obj2.prim(obj);
+      	  }
+				}
+
+
+    	
+    	} catch (IOException e) {
+	        System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
+	    }
 
 			
 

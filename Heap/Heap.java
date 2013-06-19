@@ -89,13 +89,13 @@ public class Heap {
     //--------------------------------------------------------------------
     static byte min_max = 0; // 0 = ainda não definido, 1 p/ max e -1 para min;
     private Vector<No> heap = new Vector<No>();
+    
+    
     /**
      * \class No
      *
      * \brief A classe do tipo do Array.
      */
-    
-    
     private class No{
         //--------------------------------------------------------------------
         //                       Atributos Privado

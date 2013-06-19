@@ -1,0 +1,881 @@
+81
+edge 79 47 5
+edge 25 56 14
+edge 21 7 2
+edge 23 67 10
+edge 14 6 10
+edge 42 53 12
+edge 44 10 14
+edge 5 60 4
+edge 76 30 5
+edge 37 67 15
+edge 1 65 24
+edge 76 9 9
+edge 10 31 27
+edge 19 70 13
+edge 56 3 9
+edge 18 61 3
+edge 54 25 7
+edge 67 46 22
+edge 33 41 8
+edge 24 14 13
+edge 1 15 7
+edge 41 26 17
+edge 56 36 10
+edge 14 71 1
+edge 56 46 7
+edge 23 80 27
+edge 75 70 29
+edge 0 8 1
+edge 6 48 29
+edge 80 65 13
+edge 58 25 16
+edge 61 1 2
+edge 14 31 29
+edge 69 6 13
+edge 46 45 28
+edge 20 39 14
+edge 19 30 7
+edge 80 46 26
+edge 21 53 15
+edge 72 52 21
+edge 58 45 20
+edge 22 25 9
+edge 22 55 21
+edge 12 43 24
+edge 49 9 5
+edge 21 45 3
+edge 78 65 19
+edge 14 80 5
+edge 71 36 23
+edge 14 28 4
+edge 39 21 28
+edge 9 43 16
+edge 76 65 14
+edge 13 78 16
+edge 54 62 20
+edge 59 18 23
+edge 38 16 17
+edge 64 46 5
+edge 40 52 8
+edge 3 1 19
+edge 35 41 29
+edge 32 66 7
+edge 54 77 17
+edge 50 10 5
+edge 25 80 20
+edge 9 58 10
+edge 55 31 18
+edge 3 15 14
+edge 48 71 24
+edge 77 45 1
+edge 62 77 10
+edge 10 66 16
+edge 39 35 9
+edge 0 77 6
+edge 23 5 20
+edge 16 76 24
+edge 25 15 22
+edge 15 63 19
+edge 73 31 17
+edge 36 44 11
+edge 71 25 14
+edge 11 35 20
+edge 28 74 5
+edge 55 9 8
+edge 16 49 5
+edge 67 65 16
+edge 52 26 16
+edge 4 57 24
+edge 26 50 17
+edge 58 21 16
+edge 70 11 12
+edge 13 22 3
+edge 22 50 16
+edge 2 40 16
+edge 58 72 17
+edge 55 58 21
+edge 48 46 23
+edge 71 50 21
+edge 77 11 26
+edge 50 70 9
+edge 66 75 18
+edge 43 8 8
+edge 78 48 14
+edge 44 26 15
+edge 60 0 2
+edge 60 48 9
+edge 21 39 12
+edge 39 51 9
+edge 43 20 8
+edge 67 22 12
+edge 38 0 6
+edge 48 56 2
+edge 27 69 26
+edge 62 49 28
+edge 24 28 27
+edge 45 23 16
+edge 46 44 5
+edge 33 18 18
+edge 31 77 3
+edge 34 80 16
+edge 31 53 23
+edge 53 20 26
+edge 40 63 13
+edge 10 61 21
+edge 7 4 16
+edge 4 65 3
+edge 65 47 27
+edge 36 80 19
+edge 42 46 7
+edge 3 80 13
+edge 3 30 3
+edge 3 18 1
+edge 75 74 2
+edge 71 4 1
+edge 35 11 24
+edge 27 31 15
+shortest 31 14
+shortest 68 67
+shortest 29 16
+shortest 44 75
+shortest 57 64
+shortest 74 32
+shortest 2 40
+shortest 60 5
+shortest 58 28
+shortest 15 52
+shortest 76 6
+shortest 72 38
+shortest 57 18
+shortest 5 4
+shortest 49 54
+shortest 78 15
+shortest 3 1
+shortest 18 49
+shortest 17 62
+shortest 43 9
+shortest 61 53
+shortest 57 63
+shortest 28 36
+shortest 3 5
+shortest 65 19
+shortest 73 76
+shortest 41 80
+shortest 33 17
+shortest 17 39
+shortest 37 1
+shortest 28 35
+shortest 33 31
+shortest 36 51
+shortest 80 69
+shortest 48 59
+shortest 13 29
+shortest 47 70
+shortest 11 75
+shortest 25 15
+shortest 15 25
+shortest 34 8
+shortest 20 10
+shortest 7 54
+shortest 27 41
+shortest 28 65
+shortest 42 56
+shortest 35 75
+shortest 22 71
+shortest 61 22
+shortest 75 29
+shortest 16 23
+shortest 58 63
+shortest 12 4
+shortest 57 53
+shortest 19 7
+shortest 79 69
+shortest 15 34
+shortest 79 39
+shortest 23 26
+shortest 15 51
+shortest 26 73
+shortest 26 61
+shortest 68 49
+shortest 67 64
+shortest 6 61
+shortest 12 38
+shortest 19 5
+shortest 20 31
+shortest 10 12
+shortest 19 29
+shortest 19 33
+shortest 34 51
+shortest 68 32
+shortest 25 10
+shortest 74 40
+shortest 78 19
+shortest 32 23
+shortest 15 35
+shortest 7 1
+shortest 19 29
+shortest 78 47
+shortest 67 16
+shortest 53 22
+shortest 47 63
+shortest 34 2
+shortest 27 70
+shortest 35 61
+shortest 56 38
+shortest 13 0
+shortest 65 22
+shortest 56 62
+shortest 58 7
+shortest 20 73
+shortest 59 28
+shortest 10 13
+shortest 57 7
+shortest 60 60
+shortest 24 32
+shortest 1 6
+shortest 30 52
+shortest 8 58
+shortest 41 60
+shortest 38 32
+shortest 33 67
+shortest 32 17
+shortest 9 7
+shortest 79 2
+shortest 30 35
+shortest 10 24
+shortest 63 20
+shortest 37 55
+shortest 28 17
+shortest 50 52
+shortest 65 52
+shortest 74 15
+shortest 23 2
+shortest 73 80
+shortest 78 30
+shortest 31 30
+shortest 17 79
+shortest 64 42
+shortest 21 78
+shortest 60 51
+shortest 32 70
+shortest 11 30
+shortest 10 48
+shortest 21 54
+shortest 65 71
+shortest 41 66
+shortest 58 34
+shortest 0 16
+shortest 52 73
+shortest 15 49
+shortest 38 62
+shortest 15 55
+shortest 76 14
+shortest 32 16
+shortest 11 11
+shortest 3 44
+shortest 1 14
+shortest 9 27
+shortest 62 30
+shortest 0 63
+shortest 37 41
+shortest 48 14
+shortest 10 48
+shortest 31 63
+shortest 56 62
+shortest 47 13
+shortest 60 78
+shortest 4 55
+shortest 11 52
+shortest 7 23
+shortest 80 10
+shortest 2 0
+shortest 40 11
+shortest 43 21
+shortest 58 59
+shortest 19 14
+shortest 35 67
+shortest 28 45
+shortest 50 75
+shortest 27 41
+shortest 73 10
+shortest 71 52
+shortest 7 10
+shortest 42 19
+shortest 62 49
+shortest 42 61
+shortest 75 60
+shortest 77 34
+shortest 71 39
+shortest 56 48
+shortest 33 75
+shortest 62 68
+shortest 78 26
+shortest 33 63
+shortest 36 76
+shortest 24 28
+shortest 5 30
+shortest 80 13
+shortest 40 58
+shortest 48 37
+shortest 26 25
+shortest 18 21
+shortest 4 30
+shortest 55 10
+shortest 5 46
+shortest 75 38
+shortest 57 72
+shortest 26 70
+shortest 17 59
+shortest 52 54
+shortest 70 11
+shortest 1 76
+shortest 41 17
+shortest 24 16
+shortest 75 72
+shortest 54 36
+shortest 32 72
+shortest 57 36
+shortest 21 48
+shortest 46 26
+shortest 13 56
+shortest 0 5
+shortest 48 26
+shortest 75 65
+shortest 20 63
+shortest 54 9
+shortest 74 72
+shortest 20 51
+shortest 24 44
+shortest 67 34
+shortest 51 56
+shortest 70 2
+shortest 63 63
+shortest 54 20
+shortest 46 36
+shortest 62 75
+shortest 11 62
+shortest 0 59
+shortest 7 75
+shortest 44 43
+shortest 57 33
+shortest 53 67
+shortest 40 73
+shortest 53 64
+shortest 53 55
+shortest 17 23
+shortest 31 7
+shortest 26 13
+shortest 5 80
+shortest 33 51
+shortest 35 15
+shortest 45 63
+shortest 77 45
+shortest 41 20
+shortest 56 20
+shortest 63 48
+shortest 54 35
+shortest 50 13
+shortest 44 22
+shortest 13 16
+shortest 78 30
+shortest 55 28
+shortest 53 16
+shortest 41 58
+shortest 32 75
+shortest 28 2
+shortest 25 9
+shortest 65 21
+shortest 54 26
+shortest 41 45
+shortest 46 40
+shortest 13 35
+shortest 10 63
+shortest 65 54
+shortest 5 78
+shortest 5 18
+shortest 27 61
+shortest 46 16
+shortest 77 22
+shortest 74 28
+shortest 16 38
+shortest 31 57
+shortest 47 31
+shortest 79 36
+shortest 57 55
+shortest 1 23
+shortest 14 30
+shortest 74 25
+shortest 28 58
+shortest 14 33
+shortest 55 20
+shortest 67 18
+shortest 16 32
+shortest 34 28
+shortest 55 43
+shortest 73 6
+shortest 0 39
+shortest 64 47
+shortest 70 78
+shortest 19 47
+shortest 52 20
+shortest 5 2
+shortest 66 79
+shortest 43 13
+shortest 73 57
+shortest 63 63
+shortest 12 49
+shortest 0 28
+shortest 1 50
+shortest 73 72
+shortest 13 65
+shortest 78 29
+shortest 23 77
+shortest 12 28
+shortest 74 31
+shortest 75 46
+shortest 67 15
+shortest 64 52
+shortest 30 26
+shortest 65 22
+shortest 2 47
+shortest 20 31
+shortest 16 37
+shortest 59 33
+shortest 6 67
+shortest 24 35
+shortest 51 37
+shortest 65 9
+shortest 34 12
+shortest 38 27
+shortest 43 32
+shortest 8 29
+shortest 64 72
+shortest 0 13
+shortest 33 0
+shortest 51 52
+shortest 48 71
+shortest 2 80
+shortest 27 77
+shortest 32 50
+shortest 64 72
+shortest 20 34
+shortest 28 4
+shortest 44 62
+shortest 16 17
+shortest 25 75
+shortest 65 33
+shortest 39 48
+shortest 41 55
+shortest 61 74
+shortest 56 47
+shortest 45 39
+shortest 38 63
+shortest 38 0
+shortest 60 5
+shortest 50 43
+shortest 77 6
+shortest 12 40
+shortest 10 72
+shortest 38 43
+shortest 8 63
+shortest 53 74
+shortest 31 12
+shortest 57 72
+shortest 67 54
+shortest 1 42
+shortest 20 62
+shortest 0 74
+shortest 45 54
+shortest 75 40
+shortest 75 60
+shortest 2 71
+shortest 66 30
+shortest 47 12
+shortest 22 4
+shortest 71 46
+shortest 2 43
+shortest 55 33
+shortest 71 32
+shortest 41 58
+shortest 5 58
+shortest 35 41
+shortest 39 52
+shortest 35 19
+shortest 25 45
+shortest 59 20
+shortest 40 77
+shortest 26 42
+shortest 27 8
+shortest 54 65
+shortest 28 60
+shortest 46 46
+shortest 38 21
+shortest 80 29
+shortest 69 56
+shortest 22 74
+shortest 33 73
+shortest 50 7
+shortest 44 4
+shortest 27 5
+shortest 65 5
+shortest 41 25
+shortest 18 2
+shortest 67 45
+shortest 27 56
+shortest 45 55
+shortest 35 10
+shortest 21 8
+shortest 31 36
+shortest 37 19
+shortest 27 75
+shortest 28 60
+shortest 68 79
+shortest 2 47
+shortest 18 29
+shortest 68 3
+shortest 51 44
+shortest 44 69
+shortest 47 30
+shortest 33 9
+shortest 21 13
+shortest 64 56
+shortest 23 20
+shortest 64 71
+shortest 72 37
+shortest 9 18
+shortest 47 54
+shortest 13 50
+shortest 68 16
+shortest 17 5
+shortest 61 20
+shortest 24 31
+shortest 65 3
+shortest 19 47
+shortest 49 68
+shortest 56 70
+shortest 0 39
+shortest 61 40
+shortest 76 61
+shortest 30 67
+shortest 17 55
+shortest 21 80
+shortest 44 34
+shortest 50 31
+shortest 66 2
+shortest 53 47
+shortest 22 12
+shortest 78 6
+shortest 16 33
+shortest 53 0
+shortest 20 28
+shortest 71 37
+shortest 3 51
+shortest 77 14
+shortest 31 42
+shortest 16 64
+shortest 32 37
+shortest 64 77
+shortest 7 49
+shortest 27 73
+shortest 51 15
+shortest 55 73
+shortest 28 69
+shortest 80 60
+shortest 21 68
+shortest 60 57
+shortest 32 66
+shortest 29 51
+shortest 37 25
+shortest 65 3
+shortest 2 0
+shortest 3 35
+shortest 38 2
+shortest 47 45
+shortest 51 74
+shortest 53 21
+shortest 25 28
+shortest 13 69
+shortest 32 28
+shortest 48 53
+shortest 16 43
+shortest 29 48
+shortest 29 59
+shortest 34 66
+shortest 19 18
+shortest 4 38
+shortest 18 23
+shortest 8 72
+shortest 25 55
+shortest 52 76
+shortest 64 41
+shortest 16 8
+shortest 4 30
+shortest 77 36
+shortest 58 60
+shortest 24 9
+shortest 23 69
+shortest 73 52
+shortest 63 26
+shortest 53 18
+shortest 44 57
+shortest 56 79
+shortest 0 64
+shortest 5 41
+shortest 54 58
+shortest 37 37
+shortest 34 53
+shortest 46 38
+shortest 18 58
+shortest 9 12
+shortest 38 33
+shortest 37 61
+shortest 21 30
+shortest 48 4
+shortest 56 20
+shortest 22 36
+shortest 12 13
+shortest 50 28
+shortest 77 55
+shortest 70 66
+shortest 48 26
+shortest 22 1
+shortest 14 3
+shortest 55 49
+shortest 62 64
+shortest 61 35
+shortest 16 17
+shortest 31 38
+shortest 63 79
+shortest 58 39
+shortest 18 80
+shortest 10 30
+shortest 12 60
+shortest 75 24
+shortest 34 64
+shortest 9 18
+shortest 25 31
+shortest 19 55
+shortest 51 75
+shortest 23 48
+shortest 74 19
+shortest 2 10
+shortest 53 49
+shortest 64 35
+shortest 47 41
+shortest 9 65
+shortest 40 35
+shortest 30 68
+shortest 14 24
+shortest 11 65
+shortest 23 36
+shortest 18 48
+shortest 67 37
+shortest 39 53
+shortest 47 78
+shortest 20 57
+shortest 17 38
+shortest 67 5
+shortest 6 66
+shortest 56 53
+shortest 26 66
+shortest 53 1
+shortest 36 19
+shortest 69 51
+shortest 43 15
+shortest 51 2
+shortest 51 69
+shortest 66 53
+shortest 41 24
+shortest 26 24
+shortest 22 62
+shortest 0 55
+shortest 20 2
+shortest 60 42
+shortest 68 35
+shortest 31 29
+shortest 36 3
+shortest 30 73
+shortest 22 18
+shortest 59 1
+shortest 33 45
+shortest 3 3
+shortest 33 69
+shortest 56 9
+shortest 29 17
+shortest 49 51
+shortest 80 65
+shortest 25 35
+shortest 67 4
+shortest 12 70
+shortest 55 43
+shortest 18 11
+shortest 63 64
+shortest 3 20
+shortest 1 62
+shortest 21 50
+shortest 26 40
+shortest 69 75
+shortest 45 61
+shortest 19 74
+shortest 78 4
+shortest 60 12
+shortest 69 4
+shortest 47 72
+shortest 24 60
+shortest 61 79
+shortest 22 15
+shortest 25 20
+shortest 79 28
+shortest 41 16
+shortest 25 78
+shortest 1 67
+shortest 54 71
+shortest 77 18
+shortest 67 32
+shortest 27 64
+shortest 36 6
+shortest 77 24
+shortest 26 59
+shortest 15 50
+shortest 38 12
+shortest 64 77
+shortest 43 25
+shortest 32 57
+shortest 53 73
+shortest 8 14
+shortest 6 10
+shortest 16 60
+shortest 16 29
+shortest 78 2
+shortest 61 24
+shortest 66 16
+shortest 46 78
+shortest 56 72
+shortest 73 72
+shortest 57 46
+shortest 19 56
+shortest 58 78
+shortest 0 10
+shortest 54 70
+shortest 18 79
+shortest 3 24
+shortest 8 35
+shortest 3 24
+shortest 64 16
+shortest 26 44
+shortest 56 27
+shortest 76 21
+shortest 41 52
+shortest 28 33
+shortest 59 4
+shortest 79 13
+shortest 61 57
+shortest 10 61
+shortest 67 80
+shortest 50 4
+shortest 78 69
+shortest 45 5
+shortest 40 64
+shortest 45 39
+shortest 0 6
+shortest 19 72
+shortest 34 14
+shortest 29 75
+shortest 1 57
+shortest 43 60
+shortest 78 41
+shortest 73 58
+shortest 17 18
+shortest 54 19
+shortest 18 40
+shortest 40 31
+shortest 44 4
+shortest 53 3
+shortest 68 17
+shortest 43 3
+shortest 24 62
+shortest 76 74
+shortest 11 40
+shortest 3 13
+shortest 16 46
+shortest 73 13
+shortest 22 1
+shortest 6 56
+shortest 19 61
+shortest 75 53
+shortest 36 34
+shortest 4 80
+shortest 54 73
+shortest 19 58
+shortest 25 62
+shortest 61 65
+shortest 59 72
+shortest 58 70
+shortest 31 77
+shortest 2 64
+shortest 58 11
+shortest 77 0
+shortest 12 19
+shortest 56 47
+shortest 15 66
+shortest 20 51
+shortest 36 40
+shortest 50 9
+shortest 48 69
+shortest 2 73
+shortest 66 64
+shortest 58 60
+shortest 71 35
+shortest 50 22
+shortest 48 68
+shortest 21 25
+shortest 79 33
+shortest 25 26
+shortest 52 16
+shortest 9 67
+shortest 2 29
+shortest 37 54
+shortest 4 23
+shortest 79 52
+shortest 27 1
+shortest 44 29
+shortest 65 37
+shortest 8 71
+shortest 73 74
+shortest 28 56
+shortest 62 49
+shortest 0 76
+shortest 2 42
+shortest 38 54
+shortest 74 47
+shortest 41 76
+shortest 76 13
+shortest 65 15
+shortest 52 64
+shortest 2 80
+shortest 65 62
+shortest 28 65
+shortest 19 36
+shortest 55 27
+shortest 30 3
+shortest 2 27
+shortest 52 18
+shortest 22 70
+shortest 60 60
+shortest 44 54
+shortest 26 20
+shortest 65 37
+shortest 49 50
+shortest 68 21
+shortest 33 70
+shortest 20 33
+shortest 68 64
+shortest 17 6
+shortest 35 72
+shortest 49 65
+shortest 10 51
+shortest 27 79
+shortest 69 66
+shortest 68 65
+shortest 45 47

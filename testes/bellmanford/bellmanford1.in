@@ -1,0 +1,135 @@
+10
+edge 5 7 38
+edge 6 5 -4
+edge 6 4 5
+edge 2 9 5
+edge 3 5 39
+edge 7 2 6
+edge 4 1 17
+edge 9 0 15
+edge 2 7 28
+edge 4 9 25
+edge 6 7 -3
+edge 7 5 -2
+edge 3 0 42
+edge 4 0 38
+edge 0 6 19
+edge 6 0 21
+edge 0 9 48
+edge 9 8 23
+edge 0 5 1
+edge 0 2 34
+edge 7 0 44
+edge 5 6 32
+edge 7 4 23
+edge 7 6 18
+edge 1 8 9
+edge 2 0 39
+edge 5 2 9
+edge 6 2 14
+edge 3 6 -3
+edge 9 3 35
+edge 8 9 34
+edge 2 5 44
+edge 1 6 1
+edge 4 6 42
+edge 5 8 -3
+edge 7 8 -3
+edge 6 3 17
+edge 1 5 7
+edge 5 0 19
+edge 5 1 30
+edge 0 4 9
+hasNegativeCicle
+shortest 3 0
+shortest 5 5
+shortest 8 6
+shortest 0 8
+shortest 2 3
+shortest 5 5
+shortest 0 8
+shortest 8 7
+shortest 9 2
+shortest 2 9
+shortest 9 9
+shortest 0 2
+shortest 4 8
+shortest 6 5
+shortest 4 7
+shortest 9 9
+shortest 9 7
+shortest 4 7
+shortest 3 5
+shortest 5 5
+shortest 0 1
+shortest 2 0
+shortest 1 3
+shortest 7 2
+shortest 5 2
+shortest 1 6
+shortest 3 2
+shortest 8 0
+shortest 2 6
+shortest 7 6
+shortest 3 6
+shortest 6 5
+shortest 3 2
+shortest 2 9
+shortest 9 0
+shortest 4 0
+shortest 3 9
+shortest 2 4
+shortest 2 2
+shortest 9 7
+shortest 4 0
+shortest 5 7
+shortest 2 4
+shortest 9 4
+shortest 0 6
+shortest 3 6
+shortest 5 1
+shortest 3 8
+shortest 3 5
+shortest 7 3
+shortest 7 4
+shortest 5 2
+shortest 3 7
+shortest 9 7
+shortest 9 8
+shortest 6 5
+shortest 8 1
+shortest 5 3
+shortest 7 4
+shortest 9 8
+shortest 1 4
+shortest 6 6
+shortest 5 9
+shortest 6 9
+shortest 6 6
+shortest 4 6
+shortest 0 9
+shortest 8 5
+shortest 8 7
+shortest 4 8
+shortest 7 0
+shortest 3 8
+shortest 1 8
+shortest 1 1
+shortest 3 2
+shortest 1 6
+shortest 7 7
+shortest 4 4
+shortest 6 0
+shortest 3 4
+shortest 8 9
+shortest 0 0
+shortest 0 1
+shortest 5 9
+shortest 8 9
+shortest 7 8
+shortest 1 2
+shortest 6 5
+shortest 3 9
+shortest 6 6
+shortest 3 7
+shortest 4 0

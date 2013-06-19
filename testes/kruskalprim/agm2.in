@@ -1,0 +1,20 @@
+10
+edge 0 1 4
+edge 0 2 7
+edge 1 2 7
+edge 1 5 3
+edge 1 6 2
+edge 2 5 5
+edge 2 4 3
+edge 2 3 1
+edge 3 4 2
+edge 3 7 6
+edge 4 5 2
+edge 4 7 9
+edge 5 6 12
+edge 5 8 10
+edge 6 8 4
+edge 7 8 4
+edge 7 9 5
+edge 8 9 8
+prim
